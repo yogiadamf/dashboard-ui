@@ -1,8 +1,9 @@
 import React from "react";
 import { AiOutlineProject } from "react-icons/ai";
-import Layout from "../../components/Layout";
+import {DocumentTitle, Layout} from "../../components";
 
 const Dashboard = () => {
+  DocumentTitle('Bakti Monitoring | Dashboard')
   return (
     <Layout>
       <div className="flex flex-wrap">

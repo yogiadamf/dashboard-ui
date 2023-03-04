@@ -115,18 +115,18 @@ const Sidebar = () => {
             </div>
             <div>
               <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase"> Performance </p>
-              <NavLink to="/ticketing" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
+              <NavLink to="/performance" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
                 <AiOutlineDashboard />
                 <span className="capitalize">Performance</span>
               </NavLink>
             </div>
             <div>
               <p className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase"> Activity </p>
-              <NavLink to="/ticketing" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
+              <NavLink to="/log-user" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
                 <FiActivity />
                 <span className="capitalize">Log User</span>
               </NavLink>
-              <NavLink to="/ticketing" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
+              <NavLink to="/log-system" onClick={handleCloseSideBar} style={({ isActive }) => ({ backgroundColor: isActive ? currentColor : "" })} className={({ isActive }) => isActive ? activeLink : normalLink } >
                 <MdSettingsSystemDaydream />
                 <span className="capitalize">Log System</span>
               </NavLink>
