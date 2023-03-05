@@ -8,7 +8,7 @@ import { HiOutlineOfficeBuilding, HiOutlineTicket } from "react-icons/hi";
 import { AiOutlineProject, AiOutlineDashboard } from "react-icons/ai";
 import { RiSignalTowerFill } from "react-icons/ri";
 import { BiSitemap } from "react-icons/bi";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+// import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { useStateContext } from "../contexts/ContextProvider";
 import logo from "../assets/Logo_D-Net.svg";
@@ -37,7 +37,7 @@ const Sidebar = () => {
             >
               <img className="w-24" src={logo} alt="logo-dnet" />
             </Link>
-            <TooltipComponent content="Menu" position="BottomCenter">
+            {/* <TooltipComponent content="Menu" position="BottomCenter"> */}
               <button
                 type="button"
                 onClick={() => setActiveMenu(!activeMenu)}
@@ -46,7 +46,7 @@ const Sidebar = () => {
               >
                 <MdOutlineCancel />
               </button>
-            </TooltipComponent>
+            {/* </TooltipComponent> */}
           </div>
           <div className="mt-10 ">
             <div>
