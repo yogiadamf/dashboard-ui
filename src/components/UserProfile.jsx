@@ -1,10 +1,10 @@
-import React from 'react';
-import { MdOutlineCancel } from 'react-icons/md';
+import React from "react";
+import { MdOutlineCancel } from "react-icons/md";
+import { BsCurrencyDollar } from "react-icons/bs";
 
-import { Button } from '.';
-import { userProfileData } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider';
-import avatar from '../data/avatar.jpg';
+import { Button } from ".";
+import { useStateContext } from "../contexts/ContextProvider";
+import avatar from "../assets/img/avatar3.png";
 
 const UserProfile = () => {
   const { currentColor } = useStateContext();
@@ -28,28 +28,36 @@ const UserProfile = () => {
           alt="user-profile"
         />
         <div>
-          <p className="font-semibold text-xl dark:text-gray-200"> Michael Roberts </p>
-          <p className="text-gray-500 text-sm dark:text-gray-400">  Administrator   </p>
-          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400"> info@shop.com </p>
+          <p className="font-semibold text-xl dark:text-gray-200">
+            {" "}
+            Michael Roberts{" "}
+          </p>
+          <p className="text-gray-500 text-sm dark:text-gray-400">
+            {" "}
+            Administrator{" "}
+          </p>
+          <p className="text-gray-500 text-sm font-semibold dark:text-gray-400">
+            {" "}
+            info@shop.com{" "}
+          </p>
         </div>
       </div>
-      <div>
-        {userProfileData.map((item, index) => (
-          <div key={index} className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
-            <button
-              type="button"
-              style={{ color: item.iconColor, backgroundColor: item.iconBg }}
-              className=" text-xl rounded-lg p-3 hover:bg-light-gray"
-            >
-              {item.icon}
-            </button>
+      <div className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
+        <button
+          type="button"
+          style={{ color: "#03C9D7", backgroundColor: "#E5FAFB" }}
+          className=" text-xl rounded-lg p-3 hover:bg-light-gray"
+        >
+          <BsCurrencyDollar />
+        </button>
 
-            <div>
-              <p className="font-semibold dark:text-gray-200 ">{item.title}</p>
-              <p className="text-gray-500 text-sm dark:text-gray-400"> {item.desc} </p>
-            </div>
-          </div>
-        ))}
+        <div>
+          <p className="font-semibold dark:text-gray-200 ">My Profile</p>
+          <p className="text-gray-500 text-sm dark:text-gray-400">
+            {" "}
+            Account Settings{" "}
+          </p>
+        </div>
       </div>
       <div className="mt-5">
         <Button
@@ -61,7 +69,6 @@ const UserProfile = () => {
         />
       </div>
     </div>
-
   );
 };
 
